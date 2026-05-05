@@ -318,7 +318,7 @@ function Contact() {
                 { label: 'Email', value: 'alhilal.fathi@gmail.com', href: 'mailto:alhilal.fathi@gmail.com', icon: '✉️' },
                 { label: 'GitHub', value: 'github.com/alhilalfathi', href: 'https://github.com/alhilalfathi', icon: '🐙' },
                 { label: 'LinkedIn', value: 'linkedin.com/in/alhilalfathi', href: 'https://linkedin.com/in/alhilalfathi', icon: '💼' },
-                { label: 'Phone', value: '+62 822 3637 8412', href: 'tel:+6282236378412', icon: '📱' },
+                // { label: 'Phone', value: '+62 822 3637 8412', href: 'tel:+6282236378412', icon: '📱' },
               ].map(c => (
                 <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-xl border border-[#1e1e2e] bg-[#111118] hover:border-[#4ade80]/30 hover:bg-[#0f0f18] transition-all duration-200 group">
