@@ -157,7 +157,8 @@ function About() {
             {[
               ['Location', 'Jakarta, Indonesia'],
               ['Education', 'B.Eng Electrical Engineering, UMY (2018–2023)'],
-              ['Certification', 'Scalable Web Service with Golang — Kominfo × Hacktiv8'],
+              ['Certification', 'Fullstack Website Developer - KODA Academy'],
+              ['Certification', 'Scalable Web Service with Golang - Kominfo × Hacktiv8'],
               ['Certification', 'Google IT Support Professional Certificate'],
               ['Expertise', 'Backend Engineering, API Design, Clean Architecture'],
             ].map(([k, v], i) => (
