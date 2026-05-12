@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { CiMail } from "react-icons/ci"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 interface Project {
   title: string; date: string; problem: string; solution: string
@@ -315,9 +317,9 @@ function Contact() {
             <p className="text-[#6b7280] text-lg leading-relaxed mb-8">I'm open to backend engineering roles, fullstack positions, and interesting projects. Feel free to reach out — I respond promptly.</p>
             <div className="space-y-3">
               {[
-                { label: 'Email', value: 'alhilal.fathi@gmail.com', href: 'mailto:alhilal.fathi@gmail.com', icon: '✉️' },
-                { label: 'GitHub', value: 'github.com/alhilalfathi', href: 'https://github.com/alhilalfathi', icon: '🐙' },
-                { label: 'LinkedIn', value: 'linkedin.com/in/alhilalfathi', href: 'https://linkedin.com/in/alhilalfathi', icon: '💼' },
+                { label: 'Email', value: 'alhilal.fathi@gmail.com', href: 'mailto:alhilal.fathi@gmail.com', icon: <CiMail/> },
+                { label: 'GitHub', value: 'github.com/alhilalfathi', href: 'https://github.com/alhilalfathi', icon: <FaGithub /> },
+                { label: 'LinkedIn', value: 'linkedin.com/in/alhilalfathi', href: 'https://linkedin.com/in/alhilalfathi', icon: <FaLinkedin /> },
                 // { label: 'Phone', value: '+62 822 3637 8412', href: 'tel:+6282236378412', icon: '📱' },
               ].map(c => (
                 <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer"
