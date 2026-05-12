@@ -340,7 +340,7 @@ function Contact() {
             <div className="absolute top-0 right-0 w-40 h-40 rounded-full blur-2xl pointer-events-none" style={{ background: 'rgba(74,222,128,0.05)' }} />
             <p className="text-xs text-[#6b7280] mb-6" style={{ fontFamily: 'JetBrains Mono, monospace' }}>// quick summary</p>
             <div className="space-y-3 text-sm relative">
-              {[['Status', '🟢 Open to work'], ['Role type', 'Backend / Fullstack'], ['Stack pref', 'Go, PostgreSQL, Docker'], ['Location', 'Jakarta, Indonesia'], ['Remote', 'Yes, preferred']].map(([k, v]) => (
+              {[['Status', '🟢 Open to work'], ['Role type', 'Backend / Fullstack'], ['Stack pref', 'Go, PostgreSQL, Docker'], ['Location', 'Jakarta, Indonesia'], ['Remote', 'Yes']].map(([k, v]) => (
                 <div key={k} className="flex items-center gap-3">
                   <span className="text-[#6b7280] min-w-[80px]" style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.75rem' }}>{k}</span>
                   <span className="text-[#e2e8f0]">{v}</span>
