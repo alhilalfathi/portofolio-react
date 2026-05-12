@@ -1,13 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { CiMail } from "react-icons/ci"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaPaintBrush } from "react-icons/fa"
+import { VscServerProcess } from "react-icons/vsc"
+import { BsDatabaseFill } from "react-icons/bs"
+import { MdSecurity } from "react-icons/md"
 
 interface Project {
   title: string; date: string; problem: string; solution: string
   stack: string[]; highlights: string[]; color: string; emoji: string
 }
-interface SkillGroup { category: string; icon: string; items: string[] }
+interface SkillGroup { category: string; icon: any; items: string[] }
 interface Experience { company: string; role: string; period: string; location: string; description: string; current?: boolean }
 
 const projects: Project[] = [
@@ -38,10 +41,10 @@ const projects: Project[] = [
 ]
 
 const skills: SkillGroup[] = [
-  { category: 'Backend', icon: '⚙️', items: ['Golang', 'Gin', 'Node.js', 'REST API', 'Clean Architecture', 'JWT Auth', 'GORM', 'Middleware'] },
-  { category: 'Frontend', icon: '🎨', items: ['React.js', 'Redux Toolkit', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router', 'HTML5', 'CSS3'] },
-  { category: 'Database', icon: '🗄️', items: ['PostgreSQL', 'Redis', 'pgx', 'GORM', 'golang-migrate', 'Indexing', 'Transactions'] },
-  { category: 'DevOps & Security', icon: '🔐', items: ['Docker', 'Docker Compose', 'GitHub Actions', 'GitLab CI', 'Linux CLI', 'Argon2', 'bcrypt', 'CORS'] },
+  { category: 'Backend', icon: <VscServerProcess/>, items: ['Golang', 'Gin', 'Node.js', 'REST API', 'Clean Architecture', 'JWT Auth', 'GORM', 'Middleware'] },
+  { category: 'Frontend', icon: <FaPaintBrush/>, items: ['React.js', 'Redux Toolkit', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router', 'HTML5', 'CSS3'] },
+  { category: 'Database', icon: <BsDatabaseFill/>, items: ['PostgreSQL', 'Redis', 'pgx', 'GORM', 'golang-migrate', 'Indexing', 'Transactions'] },
+  { category: 'DevOps & Security', icon: <MdSecurity/>, items: ['Docker', 'Docker Compose', 'GitHub Actions', 'GitLab CI', 'Linux CLI', 'Argon2', 'bcrypt', 'CORS'] },
 ]
 
 const experiences: Experience[] = [
